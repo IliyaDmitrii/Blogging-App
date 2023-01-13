@@ -1,0 +1,21 @@
+{
+  "db": {
+    "host": "localhost",
+    "port": 5432,
+    "password": "root",
+    "database": "appfortest"
+  },
+  "server": {
+    "host": "localhost",
+    "port": 7007
+  },
+  "auth": {
+    "tokenExpiresIn": "4h"
+  },
+  "jwt" : {
+    "secret": "54502f954d6ddd2e78dc76a48c75d94d"
+  },
+  "bcrypt": {
+    "rounds": 10
+  }
+}

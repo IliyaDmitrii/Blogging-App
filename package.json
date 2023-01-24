@@ -29,7 +29,6 @@
   },
   "devDependencies": {
     "@kintent/eslint-config-kintent-platform": "^0.1.2",
-    "eslint-kintent-platform": "kintent/eslint-kintent-platform#app",
     "eslint": "^8.31.0",
     "eslint-plugin-import": "^2.27.5",
     "mock": "^0.1.1",

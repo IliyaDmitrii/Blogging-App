@@ -25,7 +25,7 @@ const hapiOptions = {
   }
 };
 
-(async () => {
+const init = async () => {
   const server = Hapi.server(hapiOptions);
 
   // Register plugins
@@ -38,10 +38,12 @@ const hapiOptions = {
   // eslint-disable-next-line no-console
   console.log('Server url:', server.info.uri);
   return server;
-})();
+};
 
 process.on('unhandledRejection', (err) => {
   // eslint-disable-next-line no-console
   console.log(`Error is:${err}`);
   process.exit(1);
 });
+
+init();

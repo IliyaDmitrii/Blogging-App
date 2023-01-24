@@ -3,7 +3,7 @@
     "host": "localhost",
     "port": 5432,
     "password": "root",
-    "database": "appfortest"
+    "database": "app"
   },
   "server": {
     "host": "localhost",
@@ -17,10 +17,5 @@
   },
   "bcrypt": {
     "rounds": 10
-  },
-  "twilio": {
-    "TWILIO_SID": "AC103148d77272c56a0010ec74a3c36707",
-    "TWILIO_AUTH_TOKEN": "29c76b0152fca587eb875783730ca68a",
-    "TWILIO_PHONE_NUMBER": "+16089252513"
   }
 }

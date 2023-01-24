@@ -1,11 +1,11 @@
-import { signInUser, signUpUser, signInAdmin } from './users-handler.js';
+import { signUp, signInUser, signInAdmin } from './users-handler.js';
 import { insertNewUserSchema, signInUserSchema } from './users-shema.js';
 
 async function register(server) {
   server.route({
     method: 'POST',
     path: '/signup',
-    handler: signUpUser,
+    handler: signUp,
     options: {
       auth: false,
       tags: ['api'],

@@ -45,7 +45,7 @@ export async function signUp(request, h) {
 
     return h.response({ message: 'Success', token }).code(200);
   } catch (e) {
-    return h.response({ message: `Failed to sign up + ${e}` }).code(500);
+    return h.response({ message: 'Failed to sign up' }).code(500);
   }
 }
 

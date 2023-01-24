@@ -3,7 +3,7 @@ name: pullD
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   lint:

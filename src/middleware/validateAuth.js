@@ -18,7 +18,7 @@ const validateAuth = async (request, h) => {
     request.auth.credentials = decoded;
 
     const { id } = request.auth.credentials;
-    // Get user from DB with saved id in credential
+
     const user = await getByIdFromDb(TABLE_NAME.USERS, id);
     if (user.rowCount === 0) {
       return h.response({ message: 'User does not exist' });

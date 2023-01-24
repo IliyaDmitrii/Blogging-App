@@ -2,6 +2,7 @@ import sql from 'pg-sql2';
 import pg from 'pg';
 
 let pool;
+
 function _createDbPool() {
   pool = new pg.Pool({
     connectionString: process.env.DATABASE_URL

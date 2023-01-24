@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon ./src/index.js",
+    "lint": "npx eslint . --color",
     "db-migrate": "db-migrate $DATABASE_URL",
     "db-rollback": "db-rollback",
     "db-create": "db-create",
@@ -23,10 +24,13 @@
     "jsonwebtoken": "^9.0.0",
     "pg": "^8.8.0",
     "pg-sql2": "^4.12.3",
+    "twilio": "^2.5.2",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@kintent/eslint-config-kintent-platform": "^0.1.2",
     "eslint": "^8.31.0",
+    "eslint-plugin-import": "^2.27.5",
     "mock": "^0.1.1",
     "nodemon": "^2.0.20"
   }

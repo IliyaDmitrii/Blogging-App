@@ -7,6 +7,8 @@ CREATE TABLE users (
    email varchar(64) NOT NULL,
    password varchar(64) NOT NULL,
    role varchar(64) NOT NULL,
+   phone varchar(64) NOT NULL,
+   code int NOT NULL,
    created_at timestamp NOT NULL,
    updated_at timestamp NOT NULL
 );

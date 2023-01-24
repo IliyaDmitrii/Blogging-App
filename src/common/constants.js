@@ -1,15 +1,15 @@
 // TABLES
 export const TABLE_NAME = {
-    USERS: 'users',
-    POSTS: 'posts'
+  USERS: 'users',
+  POSTS: 'posts'
 };
 // ROLES FOR USERS
 export const ROLES = {
-    BLOGGER: 'BLOGGER',
-    ADMIN: 'ADMIN'
+  BLOGGER: 'BLOGGER',
+  ADMIN: 'ADMIN'
 };
 
 export const STATUS = {
-    PUBLIC: 'public',
-    HIDDEN: 'hidden'
-}
+  PUBLIC: 'public',
+  HIDDEN: 'hidden'
+};

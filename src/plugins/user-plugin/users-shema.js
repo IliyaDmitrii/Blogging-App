@@ -7,7 +7,7 @@ const user = Joi.object({
   password: Joi.string().min(6).max(30).required(),
   role: Joi.string().valid('ADMIN', 'BLOGGER').required(),
   created_at: Joi.string().isoDate().required(),
-  updated_at: Joi.string().isoDate().required()
+  updated_at: Joi.string().isoDate().required(),
 });
 
 const signUpSchema = Joi.object({

@@ -36,7 +36,7 @@ export async function signUp(request, h) {
   try {
     const existingBlogger = await getByEmailFromDb(TABLE_NAME.USERS, email);
     if (existingBlogger) {
-      return h.response({ message: 'User with email already exists' }).code(409);
+      return h.response({ message: 'User with email already exists in db' }).code(409);
     }
     // Inserted in to db
     const user = await insertToDb(TABLE_NAME.USERS, newUser);

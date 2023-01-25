@@ -21,7 +21,7 @@ export async function createPost(request, h) {
   const currentDate = new Date().toISOString();
   const newPostPayload = {
     id: postId,
-    userid: id,
+    user_id: id,
     title,
     content,
     status: STATUS.PUBLIC,
@@ -92,7 +92,7 @@ export async function updatePost(request, h) {
       return h.response({ message: 'Post not found' }).code(404);
     }
     // If the user is owner of this post
-    if (post.userid !== request.auth.credentials.id) {
+    if (post.user_id !== request.auth.credentials.id) {
       return h.response({ message: 'Forbidden' }).code(403);
     }
 
@@ -115,7 +115,7 @@ export async function removePost(request, h) {
     }
 
     // If the blogger and the post is not theirs or the user is not an admin and the post is hidden
-    if (role === ROLES.BLOGGER && post.userid !== request.auth.credentials.id) {
+    if (role === ROLES.BLOGGER && post.user_id !== request.auth.credentials.id) {
       return h.response({ message: 'Forbidden' }).code(403);
     } if (role !== ROLES.ADMIN && post.status === STATUS.HIDDEN) {
       return h.response({ message: 'Forbidden' }).code(403);
